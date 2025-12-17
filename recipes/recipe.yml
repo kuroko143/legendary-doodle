@@ -5,13 +5,9 @@ base-image: ghcr.io/ublue-os/aurora-dx
 image-version: latest
 
 modules:
-  - type: rpm-ostree
-    install:
-      - adoptium-temurin-java-repository
-
   - type: script
-    snippets:
-      - "sudo fedora-third-party enable"
+    scripts:
+      - add_adoptium_repo.sh
 
   - type: dnf
     repos:
