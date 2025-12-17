@@ -10,7 +10,7 @@ modules:
       - adoptium-temurin-java-repository
 
   - type: script
-    snippets::
+    snippets:
       - "sudo fedora-third-party enable"
 
   - type: dnf
