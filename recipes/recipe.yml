@@ -9,11 +9,6 @@ modules:
     install:
       - adoptium-temurin-java-repository
 
-  - type: rpm-ostree
-    install:
-        - temurin-8-jdk
-        - temurin-11-jdk
-
   - type: dnf
     repos:
       copr:
@@ -24,5 +19,9 @@ modules:
         - mpv
         - stow
         - wine
+        - repo: Adoptium
+          packages:
+            - temurin-8-jdk
+            - temurin-11-jdk
 
   - type: signing
