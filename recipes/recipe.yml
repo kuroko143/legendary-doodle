@@ -15,11 +15,14 @@ modules:
         - matinlotfali/KDE-Rounded-Corners
     install:
       packages:
+        - gwenview
+        - kcalc
         - kwin-effect-roundcorners
         - mpv
+        - okular
         - stow
-        - temurin-8-jdk
         - temurin-11-jdk
+        - temurin-8-jdk
         - wine
 
   - type: signing
