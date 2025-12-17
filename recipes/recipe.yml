@@ -18,7 +18,8 @@ modules:
         - kwin-effect-roundcorners
         - mpv
         - stow
-        - temurin-11-jdk
         - temurin-8-jdk
+        - temurin-11-jdk
+        - wine
 
   - type: signing
