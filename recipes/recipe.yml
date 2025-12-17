@@ -9,6 +9,10 @@ modules:
     install:
       - adoptium-temurin-java-repository
 
+  - type: script
+    scripts:
+      - enable_adoptium.sh
+
   - type: dnf
     repos:
       copr:
@@ -18,10 +22,8 @@ modules:
         - kwin-effect-roundcorners
         - mpv
         - stow
+        - temurin-8-jdk
+        - temurin-11-jdk
         - wine
-        - repo: Adoptium
-          packages:
-            - temurin-8-jdk
-            - temurin-11-jdk
 
   - type: signing
