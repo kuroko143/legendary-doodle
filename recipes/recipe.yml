@@ -9,6 +9,11 @@ modules:
     install:
       - adoptium-temurin-java-repository
 
+  - type: rpm-ostree
+    install:
+        - temurin-8-jdk
+        - temurin-11-jdk
+
   - type: dnf
     repos:
       copr:
@@ -18,8 +23,6 @@ modules:
         - kwin-effect-roundcorners
         - mpv
         - stow
-        - temurin-8-jdk
-        - temurin-11-jdk
         - wine
 
   - type: signing
