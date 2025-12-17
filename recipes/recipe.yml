@@ -10,8 +10,8 @@ modules:
       - adoptium-temurin-java-repository
 
   - type: script
-    scripts:
-      - enable_adoptium.sh
+    snippets::
+      - "sudo fedora-third-party enable"
 
   - type: dnf
     repos:
