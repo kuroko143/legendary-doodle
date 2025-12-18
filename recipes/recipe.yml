@@ -24,5 +24,9 @@ modules:
         - temurin-11-jdk
         - temurin-8-jdk
         - wine
+    remove:
+      packages:
+        - libvirt
+        - qemu
 
   - type: signing
