@@ -29,4 +29,6 @@ modules:
         - libvirt
         - qemu
 
+  - from-file: kde_rounded_corners.yml
+
   - type: signing
