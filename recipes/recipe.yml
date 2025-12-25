@@ -5,21 +5,20 @@ base-image: ghcr.io/ublue-os/aurora-dx
 image-version: latest
 
 modules:
+  - type: files
+    files:
+      - source: system
+        destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
+
   - type: script
     scripts:
       - add_adoptium_repo.sh
 
   - type: dnf
-    repos:
-      copr:
-        - matinlotfali/KDE-Rounded-Corners
     install:
       packages:
         - gwenview
-        - kcalc
-        - kwin-effect-roundcorners
         - mpv
-        - okular
         - stow
         - temurin-11-jdk
         - temurin-8-jdk
@@ -29,6 +28,6 @@ modules:
         - libvirt
         - qemu
 
-  - from-file: kde_rounded_corners.yml
+  - from-file: kde.yml
 
   - type: signing
