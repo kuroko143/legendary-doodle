@@ -1,6 +1,0 @@
-modules:
-  - type: dnf
-    remove:
-      packages:
-        - libvirt
-        - qemu
