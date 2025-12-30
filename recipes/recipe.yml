@@ -14,6 +14,9 @@ modules:
     scripts:
       - add_adoptium_repo.sh
 
+  - from-file: clean_dx_packages.yml
+  - from-file: kde.yml
+
   - type: dnf
     install:
       packages:
@@ -23,11 +26,5 @@ modules:
         - temurin-11-jdk
         - temurin-8-jdk
         - wine
-    remove:
-      packages:
-        - libvirt
-        - qemu
-
-  - from-file: kde.yml
 
   - type: signing

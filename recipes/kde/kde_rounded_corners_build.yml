@@ -16,7 +16,7 @@ modules:
 
   - type: script
     scripts:
-      - build_kde_rounded_corners.sh
+      - plasma-kde-rounded-corners.sh
 
   - type: dnf
     remove:

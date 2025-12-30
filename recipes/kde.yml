@@ -5,4 +5,4 @@ modules:
         - kcalc
         - okular
 
-  - from-file: kde_rounded_corners.yml
+  - from-file: kde/kde_rounded_corners.yml
