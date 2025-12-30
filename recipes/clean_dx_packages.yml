@@ -4,4 +4,3 @@ modules:
       packages:
         - libvirt
         - qemu
-        - virt-manager
