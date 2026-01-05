@@ -21,6 +21,7 @@ modules:
       packages:
         - gwenview
         - mpv
+        - neovim
         - stow
         - temurin-11-jdk
         - temurin-8-jdk
