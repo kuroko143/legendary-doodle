@@ -1,2 +1,8 @@
 modules:  
+  - type: dnf
+    install:
+      packages:
+        - kcalc
+        - okular
+
   - from-file: kde/kde_rounded_corners.yml
