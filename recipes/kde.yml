@@ -2,7 +2,7 @@ modules:
   - type: dnf
     install:
       packages:
+        - gwenview
         - kcalc
-        - okular
 
   - from-file: kde/kde_rounded_corners.yml

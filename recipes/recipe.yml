@@ -19,6 +19,7 @@ modules:
   - type: dnf
     install:
       packages:
+        - mpv
         - neovim
         - stow
         - temurin-11-jdk
