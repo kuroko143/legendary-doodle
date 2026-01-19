@@ -23,6 +23,7 @@ modules:
         - dolphin
         - gwenview
         - kcalc
+        - kvantum
         - mpv
         - neovim
         - stow
