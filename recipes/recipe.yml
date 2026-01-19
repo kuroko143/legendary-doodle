@@ -1,7 +1,7 @@
 ---
 name: aurora
 description: This is my personal OS image.
-base-image: ghcr.io/ublue-os/bluefin-dx
+base-image: ghcr.io/ublue-os/bluefin
 image-version: latest
 
 modules:
@@ -25,5 +25,9 @@ modules:
         - temurin-11-jdk
         - temurin-8-jdk
         - wine
+
+  - type: script
+    scripts:
+      - dx.sh
 
   - type: signing
