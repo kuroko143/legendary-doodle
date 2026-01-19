@@ -20,6 +20,7 @@ modules:
         - wezfurlong/wezterm-nightly
     install:
       packages:
+        - ark
         - dolphin
         - gwenview
         - kcalc
