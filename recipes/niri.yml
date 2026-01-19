@@ -1,0 +1,27 @@
+modules:
+  - type: dnf
+    repos:
+      copr:
+        - avengemedia/dms
+        - ulysg/xwayland-satellite
+    install:
+      packages:
+        - niri
+        - xwayland-satellite
+        - cliphist
+        - dms
+        - qt6-qtmultimedia
+        - blueman
+        - fuzzel
+        - pavucontrol
+        - qt6ct
+        - swaylock
+        - wl-clipboard
+  
+  - type: dnf
+    repos:
+      copr:
+        - wezfurlong/wezterm-nightly
+    install:
+      packages:
+        - wezterm

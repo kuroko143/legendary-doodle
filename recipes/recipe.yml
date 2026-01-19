@@ -1,20 +1,20 @@
 ---
 name: aurora
 description: This is my personal OS image.
-base-image: ghcr.io/ublue-os/aurora
+base-image: ghcr.io/ublue-os/bluefin-dx
 image-version: latest
 
 modules:
   - type: files
     files:
       - source: system
-        destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
+        destination: /
 
   - type: script
     scripts:
       - add_adoptium_repo.sh
 
-  - from-file: kde.yml
+  - from-file: niri.yml
 
   - type: dnf
     install:
@@ -25,9 +25,5 @@ modules:
         - temurin-11-jdk
         - temurin-8-jdk
         - wine
-
-  - type: script
-    scripts:
-      - dx.sh
 
   - type: signing
