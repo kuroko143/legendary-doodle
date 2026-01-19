@@ -8,20 +8,11 @@ modules:
       packages:
         - niri
         - xwayland-satellite
-        - cliphist
         - dms
-        - qt6-qtmultimedia
         - blueman
         - fuzzel
         - pavucontrol
+        - qt6-qtmultimedia
         - qt6ct
         - swaylock
         - wl-clipboard
-  
-  - type: dnf
-    repos:
-      copr:
-        - wezfurlong/wezterm-nightly
-    install:
-      packages:
-        - wezterm

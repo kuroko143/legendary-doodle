@@ -14,17 +14,24 @@ modules:
     scripts:
       - add_adoptium_repo.sh
 
-  - from-file: niri.yml
-
   - type: dnf
+    repos:
+      copr:
+        - wezfurlong/wezterm-nightly
     install:
       packages:
+        - dolphin
+        - gwenview
+        - kcalc
         - mpv
         - neovim
         - stow
         - temurin-11-jdk
         - temurin-8-jdk
+        - wezterm
         - wine
+
+  - from-file: niri.yml
 
   - type: script
     scripts:
