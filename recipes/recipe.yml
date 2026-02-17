@@ -22,8 +22,8 @@ modules:
       packages:
         - ark
         - dolphin
+        - gnome-calculator
         - gwenview
-        - kcalc
         - kvantum
         - mpv
         - neovim
