@@ -15,9 +15,6 @@ modules:
       - add_adoptium_repo.sh
 
   - type: dnf
-    repos:
-      copr:
-        - wezfurlong/wezterm-nightly
     install:
       packages:
         - ark
@@ -30,7 +27,6 @@ modules:
         - stow
         - temurin-11-jdk
         - temurin-8-jdk
-        - wezterm
         - wine
 
   - from-file: niri.yml
