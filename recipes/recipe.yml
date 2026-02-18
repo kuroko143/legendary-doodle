@@ -21,6 +21,7 @@ modules:
         - dolphin
         - gnome-calculator
         - gwenview
+        - kitty
         - kvantum
         - mpv
         - neovim
