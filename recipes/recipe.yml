@@ -28,7 +28,6 @@ modules:
         - stow
         - temurin-11-jdk
         - temurin-8-jdk
-        - wine
 
   - from-file: niri.yml
 
