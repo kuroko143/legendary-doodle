@@ -15,4 +15,3 @@ modules:
         - qt6-qtmultimedia
         - qt6ct
         - swaylock
-        - wl-clipboard
