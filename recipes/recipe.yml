@@ -17,23 +17,17 @@ modules:
   - type: dnf
     install:
       packages:
-        - ark
-        - dolphin
+        - file-roller
         - gnome-calculator
         - gwenview
         - kitty
         - kvantum
         - mpv
+        - nemo
         - neovim
         - stow
         - temurin-11-jdk
         - temurin-8-jdk
-
-  - type: dnf
-    install:
-      packages:
-        - xfconf
-        - thunar
 
   - from-file: niri.yml
 
