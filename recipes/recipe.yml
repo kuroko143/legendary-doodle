@@ -25,6 +25,7 @@ modules:
         - mpv
         - nemo
         - neovim
+        - openssh-server
         - stow
         - temurin-11-jdk
         - temurin-8-jdk
