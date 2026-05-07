@@ -29,6 +29,12 @@ modules:
         - temurin-11-jdk
         - temurin-8-jdk
 
+  - type: dnf
+    install:
+      packages:
+        - xfconf
+        - thunar
+
   - from-file: niri.yml
 
   - type: signing
