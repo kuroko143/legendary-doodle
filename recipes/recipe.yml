@@ -17,6 +17,7 @@ modules:
   - type: dnf
     install:
       packages:
+        - dolphin
         - file-roller
         - gnome-calculator
         - gwenview
