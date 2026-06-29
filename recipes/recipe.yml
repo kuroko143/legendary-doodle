@@ -17,8 +17,8 @@ modules:
   - type: dnf
     install:
       packages:
+        - ark
         - dolphin
-        - file-roller
         - gnome-calculator
         - gwenview
         - kitty
